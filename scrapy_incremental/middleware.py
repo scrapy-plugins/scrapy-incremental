@@ -1,3 +1,4 @@
+import logging
 import os
 
 from scrapy.exceptions import NotConfigured, IgnoreRequest
@@ -28,7 +29,7 @@ class ScrapyIncrementalRequestFilterMiddleware:
 
     def process_request(self, request, spider):
         if hasattr(spider, "full_crawl") and spider.full_crawl:
-            self.logger.info(
+            spider.logger.info(
                 "Spider running in 'full_crawl' mode. ScrapyIncrementalRequestFilterMiddleware "
                 "will not filter requests."
             )
