@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="scrapy-incremental",
-    version="0.1",
+    version="0.1.1",
     description=(
         "The package uses Zyte's Collections API to keep a persistent state of previously scraped "
         "items between jobs, allowing the spiders to run in an incremental behavior, only returning"

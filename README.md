@@ -9,10 +9,7 @@ scrapy-incremental is a package that uses Zyte's [Collections API](https://docs.
 You can install scrapy-incremental using pip:
 
 ```bash
-pip install git+ssh://git@github.com/scrapy-plugins/scrapy-incremental.git
-
-# OR
-pip install git+https://github.com/scrapy-plugins/scrapy-incremental.git
+pip install scrapy-incremental
 ```
 
 ### Settings
